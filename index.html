@@ -2,68 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arandeep | Web Developer</title>
     <link rel="stylesheet" href="style.css">
-
+    <script defer src="script.js"></script>
 </head>
 <body>
-     <header>
-        <h1>Arandeep</h1>
-        <p>Web Developer & Freelancer</p>
+
+    <!-- 🔹 Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="logo">Arandeep</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 🔹 Hero Section -->
+    <header class="hero" id="hero">
+        <h1>Hi, I'm Arandeep</h1>
+        <p>A Passionate Web Developer & Freelancer</p>
+        <a href="#contact" class="btn">Hire Me</a>
     </header>
 
     <!-- 🔹 Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="card">
+                <img src="resume.png" alt="Resume Builder">
+                <h3>Pro Resume Maker</h3>
+                <p>A tool to build and download resumes easily.</p>
+                <a href="https://pro-resume-maker.netlify.app/" target="_blank">View Project</a>
+            </div>
 
-        <div class="card">
-            <h3>Pro Resume Maker</h3>
-            <p>A tool to build and download resumes easily.</p>
-            <a href="https://pro-resume-maker.netlify.app/" target="_blank">View Project</a>
-        </div>
+            <div class="card">
+                <img src="restaurant.png" alt="Dining Delight">
+                <h3>Dining Delight Hub</h3>
+                <p>A restaurant website for ordering food.</p>
+                <a href="https://dining-delight-hub.netlify.app/" target="_blank">View Project</a>
+            </div>
 
-        <div class="card">
-            <h3>Dining Delight Hub</h3>
-            <p>A restaurant website for ordering food.</p>
-            <a href="https://dining-delight-hub.netlify.app/" target="_blank">View Project</a>
-        </div>
-
-        <div class="card">
-            <h3>Wanderlust Blog</h3>
-            <p>A travel blog website.</p>
-            <a href="https://wanderlust-blog.netlify.app/" target="_blank">View Project</a>
+            <div class="card">
+                <img src="wanderlust.png" alt="Wanderlust Blog">
+                <h3>Wanderlust Blog</h3>
+                <p>A travel blog website.</p>
+                <a href="https://wanderlust-blog.netlify.app/" target="_blank">View Project</a>
+            </div>
         </div>
     </section>
 
     <!-- 🔹 Services Section -->
     <section id="services">
         <h2>My Services</h2>
+        <div class="service-container">
+            <div class="card">
+                <h3>Portfolio Websites</h3>
+                <p>Modern and responsive portfolio websites.</p>
+            </div>
 
-        <div class="card">
-            <h3>Portfolio Websites</h3>
-            <p>Beautiful and responsive portfolio websites for freelancers.</p>
-        </div>
+            <div class="card">
+                <h3>Resume Website Development</h3>
+                <p>Stand out with a custom resume website.</p>
+            </div>
 
-        <div class="card">
-            <h3>Resume Website Development</h3>
-            <p>Get a custom resume website that stands out to recruiters.</p>
-        </div>
-
-        <div class="card">
-            <h3>Business & Blog Websites</h3>
-            <p>From restaurant websites to travel blogs, I build them all!</p>
+            <div class="card">
+                <h3>Business & Blog Websites</h3>
+                <p>From restaurant websites to blogs, I build them all!</p>
+            </div>
         </div>
     </section>
 
     <!-- 🔹 Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <strong>kaurarandeep121@gmail.com</strong></p>
-        <!-- <p>LinkedIn: <a href="https://www.linkedin.com/in/__" target="_blank">My Profile</a></p> -->
+        <p>Email: <strong>arandeep121@gmail.com</strong></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank">My Profile</a></p>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
