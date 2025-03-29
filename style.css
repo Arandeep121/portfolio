@@ -1,66 +1,154 @@
-/* 🌟 General Styles */
+/* 🌟 Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #2e4763, #886cb6);
-    color: white;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* 🔹 Navbar */
+nav {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    padding-left: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+nav ul li {
+    white-space: nowrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* 🔹 Hero Section */
+.hero {
     text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #89CFF0, #AEDFF7);
+    color: white;
 }
 
-/* 🔹 Header */
-header {
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.2);
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin: 0;
+.hero p {
+    font-size: 1.5em;
 }
 
-p {
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
     font-size: 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
 }
 
 /* 🔹 Sections */
 section {
-    padding: 40px 20px;
+    padding: 80px 20px;
+    text-align: center;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-/* 🔹 Project & Services Cards */
+/* 🔹 Project & Service Cards */
+.project-container, .service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .card {
-    background: white;
-    color: black;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   width: 320px;
+   background: white;
+   padding-bottom: 20px;
+   border-radius: 10px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s;
+   text-align: center;
+ 
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .card h3 {
     font-size: 1.5em;
-    margin: 0;
+    margin: 10px 0;
 }
 
 .card p {
-    font-size: 1.1em;
+    padding: 0 15px;
+    font-size: 1em;
+    color: #555;
 }
 
 .card a {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px;
+    padding: 8px 15px;
     background: #007bff;
     color: white;
     text-decoration: none;
+    font-size: 1em;
     border-radius: 5px;
+    transition: background 0.3s;
 }
 
 .card a:hover {
@@ -68,15 +156,38 @@ h2 {
 }
 
 /* 🔹 Contact Section */
-#contact p {
-    font-size: 1.2em;
+#contact {
+    background: #e3f2fd;
+    padding: 60px 20px;
 }
 
 #contact a {
-    color: #ffeb3b;
+    color: #007bff;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+/* 
+    .project-container, .service-container {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .card {
+        width: 90%;
+    }
 }
